@@ -1,11 +1,15 @@
 $bg-color-achromatic: #fafafa;
 $bg-color-chromatic: #FDF4E4;
 
-$bg-color: $bg-color-achromatic;
+$bg-color: $bg-color-chromatic;
 $color-1: #09155F;
 $color-2: #604367;
 $color-3: #F5BB41;
 $color-4: #EE8F35;
+$color-5: #006600;
+
+// $color-6: #004c00;
+// $color-7: #004000;
 
 $text-color: $color-1;
 $font: 'Quicksand', sans-serif;
@@ -15,9 +19,10 @@ $font: 'Quicksand', sans-serif;
 // 1. Colors
 $primary-color: $color-2;
 $secondary-color: $color-4;
+$link-color: $text-color;
 
 // 4. Cards
-$card-bg-color: $bg-color;
+$card-bg-color: $bg-color-achromatic;
 
 // -----------------------------------------------------------
 
@@ -25,17 +30,92 @@ body {
     margin: 0;
     padding: 0;
     font-family: $font;
+    color: $text-color;
+
     background-color: $bg-color;
 }
 
-.main-card-text {
-    font-family: $font;
-    color: $text-color;
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.main-container {
+    grid-column: col-start 1 / -1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 20px;
+    padding: 0 10px 0 10px;
 }
 
 footer {
-    font-family: $font;
+    grid-column: col-start 1 / -1;
+    grid-row: 2;
 }
+
+.main-card {
+    grid-column: col-start 1 / span 4;
+    grid-row: 1;
+}
+
+.projects {
+    grid-column: col-start 5 / -1;
+    grid-row: 1;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+}
+
+.div-img {
+    min-height: 200px;
+}
+
+.color-1 {
+    background-color: $color-5;
+}
+
+.color-2 {
+    background-color: $color-2;
+}
+
+.color-3 {
+    background-color: $color-3;
+}
+
+.color-4 {
+    background-color: $color-4;
+}
+
+// .item-1 {
+//     grid-column: ;
+//     grid-row: ;
+// }
+
+// .item-1 {
+//     grid-column: ;
+//     grid-row: ;
+// }
+
+// .item-2 {
+//     grid-column: ;
+//     grid-row: ;
+// }
+
+// .item-3 {
+//     grid-column: ;
+//     grid-row: ;
+// }
+
+// .item-4 {
+//     grid-column: ;
+//     grid-row: ;
+// }
+
+// .project-tab {
+//     color: $color-1;
+// }
+
 
 // -------- Materialize.css ---------------
 
