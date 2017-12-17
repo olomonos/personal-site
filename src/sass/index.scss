@@ -25,9 +25,18 @@ body {
     color: #09155F;
 }
 
-.main-card-text {
-    @extend .text-color;
+.font {
     font-family: 'Quicksand', sans-serif;
+}
+
+.main-card-text {
+    @extend 
+        .text-color,
+        .font;
+}
+
+footer {
+    @extend .font;
 }
 
 @import 'materialize-css/sass/materialize';
