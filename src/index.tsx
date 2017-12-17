@@ -4,6 +4,9 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+// import 'normalize.css';
+// import 'materialize-css';
+// import 'materialize-css/dist/css/materialize.css';
 import './index.css';
 
 ReactDOM.render(

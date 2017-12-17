@@ -1,10 +1,11 @@
 import * as React from 'react';
-// import MenuComponent from '../containers/menu';
-// import LocalGlobalSwitch from '../containers/local-global-switch';
+import { MainCard } from '../components/main-card';
+import { Footer } from '../components/footer';
 
 export const Home: React.StatelessComponent = () => (
     <div className="home">
-        {/* <LocalGlobalSwitch />
-        <MenuComponent /> */}
+        <MainCard />
+        <a className="waves-effect waves-light btn">button</a>
+        <Footer />
     </div>
 );

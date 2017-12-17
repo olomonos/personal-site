@@ -1,8 +1,41 @@
-$primary-color: #eee;
+$bg-color-achromatic: #fafafa;
+$bg-color-chromatic: #FDF4E4;
+
+$bg-color: $bg-color-achromatic;
+$color-1: #09155F;
+$color-2: #604367;
+$color-3: #F5BB41;
+$color-4: #EE8F35;
+
+$primary-color: $color-2;
+$secondary-color: $color-4;
 
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: $primary-color;
+    background-color: $bg-color;
 }
+
+.bg-color {
+    background-color: $bg-color;
+}
+
+.text-color {
+    color: #09155F;
+}
+
+.main-card-text {
+    @extend .text-color;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@import '../../node_modules/materialize-css/sass/materialize';
+
+// -------- fonts - ? ---------------------
+
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+// font-family: 'Varela Round', sans-serif;
+// ----------------------------------------
