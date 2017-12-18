@@ -8,9 +8,6 @@ $color-3: #F5BB41;
 $color-4: #EE8F35;
 $color-5: #006600;
 
-// $color-6: #004c00;
-// $color-7: #004000;
-
 $text-color: $color-1;
 $font: 'Quicksand', sans-serif;
 
@@ -24,7 +21,6 @@ $link-color: $text-color;
 // 4. Cards
 $card-bg-color: $bg-color-achromatic;
 
-// $num-cols: 24;
 // -----------------------------------------------------------
 
 // ------------------- Materialize.css -----------------------
@@ -47,24 +43,20 @@ body {
     grid-template-columns: repeat(12, [col-start] 1fr);
 }
 
+
+// .footer
 footer {
     grid-column: col-start 1 / -1;
     grid-row: 3;
-    // display: grid;
-    // grid-template-columns: repeat(12, [col-start] 1fr);
 }
 
 .footer-content {
-    // grid-column: col-start 1 / -1;
-    // grid-row: 1;
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
     color: $bg-color-achromatic;
 }
 
 .footer-shadow {
-    // grid-column: col-start 1 / -1;
-    // grid-row: 2;
     color: rgba(255,255,255,.5);
     background-color: rgba(51,51,51,.2);
     height: 50px;
@@ -76,25 +68,31 @@ footer {
     align-self: center;
 }
 
-// .copyright-text {
-//     color: rgba(255,255,255,.8);
-//     background-color: rgba(51,51,51,.08);
-// }
+.main-container {
+    grid-column: col-start 1 / -1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.main-card {
+    grid-row: 1;
+}
+
+.copyright-box {
+    grid-row: 1;
+    display: grid;
+}
 
 @media screen and (min-width: 993px) {
     
     .main-container {
-        grid-column: col-start 1 / -1;
-        grid-row: 1;
-        display: grid;
-        grid-template-columns: repeat(12, [col-start] 1fr);
         grid-gap: 20px;
         padding: 0 10px 0 10px;
     }
 
     .main-card {
         grid-column: col-start 1 / span 4;
-        grid-row: 1;
     }
 
     .projects {
@@ -117,25 +115,17 @@ footer {
 
     .copyright-box {
         grid-column: col-start 3 / -1;
-        grid-row: 1;
-        display: grid;
     }
 }
 
 @media screen and (max-width: 992px) {
 
     .main-container {
-        grid-column: col-start 1 / -1;
-        grid-row: 1;
-        display: grid;
-        grid-template-columns: repeat(12, [col-start] 1fr);
         grid-gap: 20px;
-        // padding: 0 10px 0 10px;
     }
 
     .main-card {
         grid-column: col-start 1 / -1;
-        grid-row: 1;
     }
 
     .projects {
@@ -146,9 +136,6 @@ footer {
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
     }
-
-    // .project-tab {
-    // }
 
     .column-1 {
         grid-column: col-start 2 / span 5;
@@ -162,23 +149,16 @@ footer {
 
     .copyright-box {
         grid-column: col-start 2 / -1;
-        grid-row: 1;
-        display: grid;
     }
 }
 
 @media screen and (max-width: 600px) {
 
-    .main-container {
-        grid-column: col-start 1 / -1;
-        grid-row: 1;
-        display: grid;
-        grid-template-columns: repeat(12, [col-start] 1fr);
-    }
+    // .main-container {
+    // }
 
     .main-card {
         grid-column: col-start 1 / -1;
-        grid-row: 1;
     }
 
     .projects {
@@ -198,8 +178,6 @@ footer {
 
     .copyright-box {
         grid-column: col-start 2 / -1;
-        grid-row: 1;
-        display: grid;
     }
 }
 

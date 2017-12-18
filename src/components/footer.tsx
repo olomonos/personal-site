@@ -29,8 +29,6 @@ export const Footer: React.StatelessComponent = () => {
             <div className="footer-shadow">
                     <div className="copyright-box">
                         <span className="copyright-sign">© {year} Olena Lomonos</span>
-                        {/* © 2017 - {year} Olena Lomonos */}
-                {/* <a className="grey-text text-lighten-4 right" href="#!">More Links</a> */}
                     </div>
             </div>
         </footer>
