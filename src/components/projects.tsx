@@ -40,3 +40,5 @@ export const Projects: React.StatelessComponent = () => {
     </div>
     );
 };
+
+// map for <ProjectTab /> ?

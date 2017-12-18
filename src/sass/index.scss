@@ -112,8 +112,7 @@ body {
     }
 }
 
-// min-width
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 992px) {
 
     .main-card {
         grid-column: col-start 1 / -1;
