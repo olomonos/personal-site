@@ -6,7 +6,7 @@ export const Footer: React.StatelessComponent = () => {
     const year = date.getFullYear();
 
     return (
-        <footer className="page-footer">
+        <footer className="page-footer custom-page-footer">
                 <div className="footer-content">
                     <div className="column-1">
                         <h5>Languages</h5>

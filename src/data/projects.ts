@@ -3,17 +3,17 @@ import { Project } from '../store/types';
 export const PROJECT_1: Project = {
     projectName: 'Matching Game',
     projectDescription: 'Rules: \n You should find the odd circle in the right' 
-        + 'part of the field. Time is limited. If you can\'t find the odd circle' 
-        + 'in time, the game is over.',
+        + ' part of the field. Time is limited. If you can\'t find the odd circle' 
+        + ' in time, the game is over.',
     githubLink: 'https://github.com/olomonos/matching-game/',
     githubPageLink: 'https://olomonos.github.io/matching-game/'
 };
 
 export const PROJECT_2: Project = {
     projectName: 'Grammarly Front End Challenge',
-    projectDescription: 'In this building, the lift can go to any apartment.' 
-        + 'Find the optimal path for the lift, taking into account that the time' 
-        + 'needed to pass through an apartment varies.',
+    projectDescription: 'In the building, the lift can go to any apartment.' 
+        + ' Find the optimal path for the lift, taking into account that the time' 
+        + ' needed to pass through an apartment varies.',
     githubLink: 'https://github.com/olomonos/grammarly-front-end-challenge/',
     githubPageLink: 'https://olomonos.github.io/grammarly-front-end-challenge/'
 };

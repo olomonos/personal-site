@@ -34,7 +34,6 @@ body {
     padding: 0;
     font-family: $font;
     color: $text-color;
-
     background-color: $bg-color;
 }
 
@@ -43,9 +42,7 @@ body {
     grid-template-columns: repeat(12, [col-start] 1fr);
 }
 
-
-// .footer
-footer {
+.custom-page-footer {
     grid-column: col-start 1 / -1;
     grid-row: 3;
 }
@@ -73,6 +70,8 @@ footer {
     grid-row: 1;
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 20px;
+    padding: 0 10px 0 10px;
 }
 
 .main-card {
@@ -86,11 +85,6 @@ footer {
 
 @media screen and (min-width: 993px) {
     
-    .main-container {
-        grid-gap: 20px;
-        padding: 0 10px 0 10px;
-    }
-
     .main-card {
         grid-column: col-start 1 / span 4;
     }
@@ -118,11 +112,8 @@ footer {
     }
 }
 
+// min-width
 @media screen and (max-width: 992px) {
-
-    .main-container {
-        grid-gap: 20px;
-    }
 
     .main-card {
         grid-column: col-start 1 / -1;
@@ -131,7 +122,6 @@ footer {
     .projects {
         grid-column: col-start 1 / -1;
         grid-row: 2;
-        padding: 0 10px 0 10px;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
@@ -153,9 +143,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-
-    // .main-container {
-    // }
 
     .main-card {
         grid-column: col-start 1 / -1;
