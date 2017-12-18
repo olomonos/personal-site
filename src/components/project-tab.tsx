@@ -19,7 +19,7 @@ export const ProjectTab: React.StatelessComponent<Props> = ({
     return (
         // <div className="project-tab">
 
-            <div className={'card small sticky-action ' + rest['data-grid-class']}>
+            <div className={'card small sticky-action project-tab ' + rest['data-grid-class']}>
             {/* <div className="card small sticky-action"> */}
                 <div className="card-image waves-effect waves-block waves-light">
                     {/* <img className="activator" src={fox} /> */}
