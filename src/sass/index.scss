@@ -45,6 +45,11 @@ $card-bg-color: $bg-color-achromatic;
 // $card-link-color-light: lighten($card-link-color, 20%);
 
 // -----------------------------------------------------------
+// ------------------- Materialize.css -----------------------
+
+@import 'materialize-css/sass/materialize';
+
+// -----------------------------------------------------------
 
 body {
     margin: 0;
@@ -269,8 +274,14 @@ body {
     }
 }
 
+// ---------------- cards ------------------
+
 .card-name {
-    min-height: 60px;
+    min-height: 65px;
+}
+
+.card .card-content {
+    padding-top: 18px;
 }
 
 .div-img {
@@ -296,12 +307,6 @@ body {
 .color-5 {
     background-color: $color-5;
 }
-
-// ------------------- Materialize.css -----------------------
-
-@import 'materialize-css/sass/materialize';
-
-// -----------------------------------------------------------
 
 // -------- fonts - ? ---------------------
 
