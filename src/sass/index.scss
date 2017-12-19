@@ -1,12 +1,30 @@
 $bg-color-achromatic: #fafafa;
 $bg-color-chromatic: #FDF4E4;
 
-$bg-color: $bg-color-chromatic;
-$color-1: #09155F;
-$color-2: #604367;
-$color-3: #F5BB41;
-$color-4: #EE8F35;
-$color-5: #006600;
+$color-1: #34444B;
+$color-2: #5D5F6F;
+$color-3: #998D8D;
+$color-4: #A3B89D;
+$color-5: #DDE0E4;
+
+// ------ colors (set 2) -----
+
+// $color-1: #2E3837;
+// $color-2: #7B8486;
+// $color-3: #D7B1A9;
+// $color-4: #E3DEDF;
+// $color-5: #E9E9E9;
+
+// ------ colors (set 1) -----
+
+// $bg-color: $bg-color-chromatic;
+// $color-1: #09155F;
+// $color-2: #604367;
+// $color-3: #F5BB41;
+// $color-4: #EE8F35;
+// $color-5: #006600;
+
+// ---------------------------
 
 $text-color: $color-1;
 $font: 'Quicksand', sans-serif;
@@ -14,12 +32,15 @@ $font: 'Quicksand', sans-serif;
 // ------------ Materialize variables overwriting ------------
 
 // 1. Colors
-$primary-color: $color-2;
+$primary-color: $color-1;
 $secondary-color: $color-4;
-$link-color: $bg-color-achromatic;
+$link-color: $color-5;
 
 // 4. Cards
 $card-bg-color: $bg-color-achromatic;
+
+// $card-link-color: $color-4;
+// $card-link-color-light: lighten($card-link-color, 20%);
 
 // -----------------------------------------------------------
 
@@ -28,7 +49,8 @@ body {
     padding: 0;
     font-family: $font;
     color: $text-color;
-    background-color: $bg-color;
+    background-color: $color-5;
+
 }
 
 .home {
@@ -43,8 +65,8 @@ body {
 // ---------------- page header-------------------------------
 
 .page-header {
-    background-color: $color-2;
-    color: $bg-color-achromatic;
+    background-color: $color-1;
+    color: $color-5;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -174,7 +196,7 @@ body {
 .footer-content {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    color: $bg-color-achromatic;
+    color: $color-5;
 }
 
 .footer-shadow {
