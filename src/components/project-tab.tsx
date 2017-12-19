@@ -6,17 +6,18 @@ export type Props = {
     projectDescription: Project['projectDescription'],
     githubLink: Project['githubLink'],
     githubPageLink: Project['githubPageLink'],
-}; // & React.HTMLAttributes<HTMLDivElement>;
+} & React.HTMLAttributes<HTMLDivElement>;
 
 export const ProjectTab: React.StatelessComponent<Props> = ({
     projectName,
     projectDescription,
     githubLink,
     githubPageLink,
-    // ...rest
+    ...rest
 }) => {
     return (
         <div className="card small project-tab">
+            <div className={'div-img ' + rest.className} />
             <div className="card-content">
                 <div className="card-name">
                     <span className="card-title">
