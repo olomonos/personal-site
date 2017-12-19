@@ -2,8 +2,6 @@ import * as React from 'react';
 import { ProjectTab } from '../components/project-tab';
 import { PROJECT_1, PROJECT_2, PROJECT_3, PROJECT_4 } from '../data/projects';
 
-// delete this file ?
-
 export const Projects: React.StatelessComponent = () => {
     return (
         <div className="projects">

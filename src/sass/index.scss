@@ -16,16 +16,10 @@ $font: 'Quicksand', sans-serif;
 // 1. Colors
 $primary-color: $color-2;
 $secondary-color: $color-4;
-$link-color: $text-color;
+$link-color: $bg-color-achromatic;
 
 // 4. Cards
 $card-bg-color: $bg-color-achromatic;
-
-// -----------------------------------------------------------
-
-// ------------------- Materialize.css -----------------------
-
-@import 'materialize-css/sass/materialize';
 
 // -----------------------------------------------------------
 
@@ -36,6 +30,123 @@ body {
     color: $text-color;
     background-color: $bg-color;
 }
+
+// ---------------- page header-------------------------------
+
+.page-header {
+    background-color: $color-2;
+    color: $bg-color-achromatic;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-logo {
+    font-size: 2.1rem;
+    grid-column: 1 / 2;
+    align-self: center;
+    position: relative;
+    left: 1rem;
+}
+
+.header-contacts {
+    grid-column: 2 / 3;
+    display: grid;
+}
+
+.header-github {
+    align-self: center;
+    justify-self: right;
+}
+
+.header-email {
+    align-self: center;
+    justify-self: right;
+    position: relative;
+    right: 1rem;
+}
+
+@media screen and (min-width: 751px) {
+    
+    .page-header {
+        height: 70px;
+    }
+
+    .header-contacts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-github {
+        grid-column: 1 / 2;
+    }
+    
+    .header-email {
+        grid-column: 2 / 3;
+    }   
+}
+
+@media screen and (max-width: 750px) and (min-width: 500px) {
+
+    .page-header {
+        height: 100px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .header-logo {
+        grid-row: 1 / 2;
+        align-self: end;
+    }
+
+    .header-contacts {
+        grid-row: 1 / 3;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .header-github {
+        grid-row: 1 / 2;
+        position: relative;
+        right: 1rem;
+    }
+    
+    .header-email {
+        grid-row: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .page-header {
+        height: 140px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .header-logo {
+        left: 0;
+        grid-row: 1 / 2;
+        align-self: end;
+        justify-self: center;
+    }
+    
+    .header-contacts {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .header-github {
+        grid-row: 1 / 2;
+        align-self: end;
+        justify-self: center;
+    }
+    
+    .header-email {
+        grid-row: 2 / 3;
+        justify-self: center;
+        right: 0;
+    }
+}
+
+// --------------------- page footer ----------------------
 
 .footer-content {
     display: grid;
@@ -51,37 +162,17 @@ body {
     grid-template-columns: repeat(12, [col-start] 1fr);
 }
 
-.copyright-sign {
-    align-self: center;
-}
-
-.main-container {
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
-    grid-gap: 20px;
-    padding: 0 10px 0 10px;
-}
-
-.div-img {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 2px;
-    box-shadow: 1px 1px 1px 1px#b2b2b2;
-}
-
 .copyright-box {
     grid-row: 1;
     display: grid;
 }
 
+.copyright-sign {
+    align-self: center;
+}
+
 @media screen and (min-width: 993px) {
-    
-    .main-card {
-        grid-column-end: span 2;
-    }
-    
+        
     .column-1 {
         grid-column: col-start 3 / span 4;
         grid-row: 1;
@@ -98,10 +189,6 @@ body {
 }
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
-
-    .main-card {
-        grid-column-end: span 2;
-    }
     
     .column-1 {
         grid-column: col-start 2 / span 5;
@@ -120,10 +207,6 @@ body {
 
 @media screen and (max-width: 600px) {
     
-    .main-card {
-        grid-column: 1 / -1;
-    }
-
     .column-1 {
         grid-column: col-start 2 / -1;
         grid-row: 1;
@@ -162,6 +245,12 @@ body {
 // .color-5 {
 //     background-color: $color-5;
 // }
+
+// ------------------- Materialize.css -----------------------
+
+@import 'materialize-css/sass/materialize';
+
+// -----------------------------------------------------------
 
 // -------- fonts - ? ---------------------
 
