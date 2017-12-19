@@ -5,10 +5,8 @@ import { Footer } from '../components/footer';
 
 export const Home: React.StatelessComponent = () => (
     <div className="home">
-        <div className="main-container">
-            <MainCard />
-            <Projects />
-        </div>
+        <MainCard />
+        <Projects />
         <Footer />
     </div>
 );

@@ -3,10 +3,12 @@ import { NAME, EMAIL, GITHUB } from '../data/main-card';
 
 export const MainCard: React.StatelessComponent = () => {
     return (
-        <div className="card-panel main-card">
-            <h3>{NAME}</h3>
-            <a href="https://github.com/olomonos/">{GITHUB}</a>
-            <h6>{EMAIL}</h6>
+        <div className="page-header">
+            <span className="header-logo">{NAME}</span>
+            <div className="header-contacts">
+                <a className="header-github" href={GITHUB}>{GITHUB}</a>
+                <span className="header-email">{EMAIL}</span>
+            </div>
         </div>
     );
 };
