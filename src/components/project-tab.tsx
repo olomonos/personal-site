@@ -30,7 +30,9 @@ export const ProjectTab: React.StatelessComponent<Props> = ({
             </div>
             <div className="card-action">
                 <a href={githubLink}>Github</a>
-                <a href={githubPageLink}>Github Page</a>
+                {projectName !== 'Personal Site' ?
+                <a href={githubPageLink}>Try It</a> :
+                null}
             </div>
         </div>
     );
