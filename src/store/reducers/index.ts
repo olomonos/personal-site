@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import { Store } from '../types';
 import { Reducer } from './reducer';
-import { lang } from './lang';
+import { projects } from './projects';
+import { contact } from './contact';
 
 export default combineReducers({
-    lang
+    projects,
+    contact
 }) as Reducer<Store>;

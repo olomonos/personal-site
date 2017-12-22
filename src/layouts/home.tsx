@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { MainCard } from '../components/main-card';
-import { Projects } from '../components/projects';
+import Header from '../containers/header';
+import Projects from '../containers/projects';
 import { Footer } from '../components/footer';
 
 export const Home: React.StatelessComponent = () => (
     <div className="home">
-        <MainCard />
+        <Header />
         <Projects />
         <Footer />
     </div>

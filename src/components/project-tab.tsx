@@ -1,23 +1,27 @@
 import * as React from 'react';
-import { Project } from '../store/types';
+import { ProjectCard } from '../store/types';
 
 export type Props = {
-    projectName: Project['projectName'],
-    projectDescription: Project['projectDescription'],
-    githubLink: Project['githubLink'],
-    githubPageLink: Project['githubPageLink'],
-} & React.HTMLAttributes<HTMLDivElement>;
+    projectName: ProjectCard['projectName'],
+    projectDescription: ProjectCard['projectDescription'],
+    githubLink: ProjectCard['githubLink'],
+    githubPageLink: ProjectCard['githubPageLink'],
+    isTryIt: ProjectCard['isTryIt'],
+    color: ProjectCard['color']
+}; // & React.HTMLAttributes<HTMLDivElement>;
 
 export const ProjectTab: React.StatelessComponent<Props> = ({
     projectName,
     projectDescription,
     githubLink,
     githubPageLink,
-    ...rest
+    isTryIt,
+    color
+    // ...rest
 }) => {
     return (
         <div className="card small project-tab">
-            <div className={'div-img ' + rest.className} />
+            <div className={'div-img ' + color} />
             <div className="card-content">
                 <div className="card-name">
                     <span className="card-title">
